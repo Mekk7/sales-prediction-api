@@ -1,4 +1,4 @@
-🚀 Sales Prediction API 🚀
+🚀 Sales Prediction API 🚀/n
 An advanced, machine-learning-powered API designed to predict sales accurately based on a set of complex input features. This project is built using Flask, integrated with a high-performance Random Forest Regressor model, and optimized for handling real-world sales data effectively.
 
 🔥 Table of Contents
