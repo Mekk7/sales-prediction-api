@@ -1,5 +1,3 @@
-I see that you would like to include more details about the dataset, input/output, and future scope in your README. Here’s an updated version with these explanations:
-
 ```markdown
 # 🚀 Sales Prediction API 🚀
 
