@@ -27,7 +27,7 @@ The **Sales Prediction API** combines cutting-edge machine learning techniques w
 
 ### ⚙️ Setup and Installation
 1. **Clone the Repository**:
-   bash
+   ```bash
    git clone https://github.com/Mekk7/sales-prediction-api.git
    cd sales-prediction-api
 
@@ -35,7 +35,7 @@ The **Sales Prediction API** combines cutting-edge machine learning techniques w
 
 This project is organized as follows:
 
-plaintext
+```plaintext
 Project-A/
 ├── app.py                   # Your Flask application
 ├── requirements.txt         # Lists all dependencies for easy setup
