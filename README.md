@@ -38,7 +38,7 @@ The **Sales Prediction API** combines cutting-edge machine learning techniques w
 
 3. **Download the Model File**:
    - ⚠️ **Note**: Due to size limitations, the model file is hosted externally.
-   - Download `sales_prediction_model.pkl` from [Google Drive here](Google_Drive_Link).
+   - Download `sales_prediction_model.pkl` from [Google Drive here](https://drive.google.com/file/d/1jTHg0KOZVpDPH3dovBt6TZPRdO82dJ52/view?usp=drive_link).
    - Place the file in the root directory of this project.
 
 ### 🚀 Usage
