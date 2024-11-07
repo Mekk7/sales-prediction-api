@@ -67,18 +67,38 @@ The **Sales Prediction API** combines cutting-edge machine learning techniques w
 
 Example Request:
 ```json
+To make a prediction using the Sales Prediction API, you need to provide data in the following format:
+
+```json
 {
-  "feature1": 123,
-  "feature2": 456
+    "Paid_Views": 2300,
+    "Organic_Views": 1800,
+    "Google_Impressions": 1200,
+    "Email_Impressions": 500,
+    "Facebook_Impressions": 700,
+    "Affiliate_Impressions": 400,
+    "Overall_Views": 3700,
+    "Month": 10,
+    "Week": 42,
+    "Day": 17,
+    "Google_Impression_Ratio": 0.3243,
+    "Facebook_Impression_Ratio": 0.1892,
+    "Email_Impression_Ratio": 0.1351
+}
+```
+```
+### Expected Response
+
+The API will process the input data and return a predicted sales value. The response will be in JSON format:
+
+```json
+{
+    "predicted_sales": 15800
 }
 ```
 
-Example Response:
-```json
-{
-  "prediction": 7890.12
-}
-```
+This value represents the predicted sales based on the provided input data.
+
 
 ### 💡 Pro Tips & Troubleshooting
 - **Model Loading Issues**: If loading errors occur, confirm that `sales_prediction_model.pkl` is correctly placed in the root folder.
@@ -88,3 +108,26 @@ Example Response:
 ```
 
 Copy and paste this into your README file in GitHub, and it should display well with the intended formatting and highlight the complexity of your project!
+Here is the content you can include in your GitHub README file for your Sales Prediction API project, formatted using Markdown:
+
+```markdown
+# Sales Prediction API
+
+This project provides a Sales Prediction API that allows you to predict sales based on various marketing and engagement metrics. The API uses machine learning to process inputs such as paid and organic views, impressions from various platforms, and other related features to generate predictions.
+
+
+### Explanation of Each Feature
+
+- **Paid_Views**: The number of views generated through paid advertising campaigns. In this example, paid ads generated 2,300 views.
+- **Organic_Views**: The number of views generated organically, such as through direct traffic or organic search engine results. Here, 1,800 views were obtained organically.
+- **Google_Impressions**: The total number of times an ad appeared on Google. This dataset shows 1,200 impressions on Google, indicating the potential reach through Google Ads.
+- **Email_Impressions**: The number of impressions obtained via email marketing campaigns. Here, 500 impressions were generated through emails.
+- **Facebook_Impressions**: The number of impressions on Facebook, which could come from ads or organic posts. This example has 700 Facebook impressions.
+- **Affiliate_Impressions**: The number of impressions generated through affiliate marketing (partners or other websites). In this dataset, 400 impressions were obtained via affiliates.
+- **Overall_Views**: The sum of all views across channels (paid and organic). With 3,700 views overall, this feature provides a comprehensive measure of overall reach.
+- **Month**: The month when the data was collected. 10 represents October.
+- **Week**: The week number within the year when the data was collected. 42 represents the 42nd week of the year, falling in mid-October.
+- **Day**: The day of the month. 17 represents the 17th day of the month (October 17).
+- **Google_Impression_Ratio**: The ratio of Google impressions to the overall views, indicating the proportion of reach from Google. Here, 0.3243 shows that around 32.43% of impressions came from Google.
+- **Facebook_Impression_Ratio**: The ratio of Facebook impressions to overall views. A 0.1892 ratio means that approximately 18.92% of impressions came from Facebook.
+- **Email_Impression_Ratio**: The ratio of email impressions to overall views. Here, 0.1351 means around 13.51% of impressions were email-generated.
